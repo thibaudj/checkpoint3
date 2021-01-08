@@ -1,2 +1,2 @@
 ## Requête SQL
-select id, count(*) AS nb from comment;
+select count(*) AS nb from comment;
