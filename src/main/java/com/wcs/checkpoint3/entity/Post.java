@@ -24,7 +24,7 @@ public class Post {
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     User user;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     List<Comment> comments;
